@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="paneLogin" prefHeight="411.0" prefWidth="681.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="waterbalance.loginScreenController">
+    <children>
+      <ImageView fx:id="bgLogin" fitHeight="358.0" fitWidth="610.0" layoutX="60.0" layoutY="30.0" nodeOrientation="INHERIT" pickOnBounds="true" style="-fx-scale-x: 1.2; -fx-scale-y: 1.2;">
+         <image>
+            <Image url="@../images/bgLogin.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="279.0" fitWidth="725.0" layoutY="-46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/hz.png" />
+         </image>
+      </ImageView>
+        <Button fx:id="loginButton" alignment="CENTER" layoutX="283.0" layoutY="327.0" mnemonicParsing="false" onAction="#loginButton" prefHeight="46.0" prefWidth="116.0" style="-fx-background-radius: 50;" text="LOGIN" textFill="#3daac6">
+            <font>
+                <Font name="Tahoma Bold" size="18.0" />
+            </font>
+        </Button>
+        <TextField fx:id="usernameArea" alignment="CENTER" layoutX="155.0" layoutY="245.0" prefHeight="69.0" prefWidth="371.0" promptText="INSERT YOUR USERNAME">
+            <font>
+                <Font name="Tahoma" size="26.0" />
+            </font>
+        </TextField>
+        <Label fx:id="labelLogo" alignment="CENTER" contentDisplay="CENTER" layoutX="52.0" layoutY="34.0" prefHeight="82.0" prefWidth="578.0" style="-fx-stroke: 2;" stylesheets="@LoginScreen.css" text="WATER BALANCE" textFill="#3da9c4">
+            <font>
+                <Font name="Tahoma Bold" size="16.0" />
+            </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX" choke="1.0" height="1.0" radius="0.0" width="1.0" />
+         </effect>
+        </Label>
+      <Label fx:id="phrasesText" alignment="CENTER" contentDisplay="CENTER" layoutX="104.0" layoutY="90.0" prefHeight="95.0" prefWidth="488.0" textAlignment="CENTER" textFill="#0800008f">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+    </children>
+    <stylesheets>
+        <URL value="@LoginScreen.css" />
+    </stylesheets>
+</AnchorPane>

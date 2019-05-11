@@ -1,0 +1,14 @@
+#labelLogo {
+    -fx-font-weight: bold;
+    -fx-font-size: 65px;
+    -fx-font-family: Tahoma;
+}
+
+#usernameArea {
+    -fx-background-radius: 50px;
+}
+
+#phrasesText {
+    -fx-font-family: Tahoma;
+    -fx-font-size: 20px;
+}

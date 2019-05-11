@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="681.0" stylesheets="@MainScreen.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="waterbalance.statisticsScreenController">
+   <children>
+      <Pane layoutX="21.0" layoutY="28.0" prefHeight="411.0" prefWidth="168.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="513.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="195.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/mainScreen.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="trackerButton" layoutX="16.0" layoutY="71.25" mnemonicParsing="false" onAction="#trackerButton" prefHeight="45.0" prefWidth="136.0" style="-fx-background-radius: 50;" text="TRACKER">
+               <font>
+                  <Font name="Tahoma Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="statisticsButton" layoutX="16.0" layoutY="187.5" mnemonicParsing="false" onAction="#statisticsButton" prefHeight="45.0" prefWidth="136.0" style="-fx-background-radius: 50;" text="STATISTICS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Tahoma Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="exitButton" layoutX="16.0" layoutY="303.75" mnemonicParsing="false" onAction="#exitButton" prefHeight="45.0" prefWidth="136.0" style="-fx-background-radius: 50;" text="EXIT">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Tahoma Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
