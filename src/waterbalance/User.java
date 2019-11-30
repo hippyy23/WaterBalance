@@ -1,41 +1,63 @@
 package waterbalance;
 
+import java.io.Serializable;
+import java.time.LocalDate;
+
 /**
  *
  * @author Adrian
  */
-public class User {
-    
+public class User implements Serializable {
+
     // class variables
-    String user;
-    
+    LocalDate date;
+    String username;
+
     /**
      * constructor
-     * 
-     * @param user 
+     *
+     * @param user
+     * @param date
      */
-    public User(String user) {
-        this.user = user;
+    public User(String user, LocalDate date) {
+        this.username = user;
+        this.date = date;
     }
-    
+
     /**
-     * get user
-     * 
-     * @return user
+     * get String username
+     *
+     * @return username
      */
-    public String getUser() {
-        return user;
+    public String getUsername() {
+        return username;
     }
-    
+
     /**
-     * set user
-     * 
-     * @param user 
+     * set username
+     *
+     * @param username
      */
-    public void setUser(String user) {
-        this.user = user;
+    public void setUsername(String username) {
+        this.username = username;
     }
-    
-    
-    
+
+    /**
+     * returns LocalDate date
+     *
+     * @return date
+     */
+    public LocalDate getDate() {
+        return date;
+    }
+
+    /**
+     * sets date
+     *
+     * @param date
+     */
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
+
 }

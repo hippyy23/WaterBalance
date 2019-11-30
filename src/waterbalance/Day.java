@@ -7,31 +7,31 @@ import java.time.LocalDate;
  *
  * @author Adrian
  */
-public class Entry implements Serializable {
+public class Day implements Serializable {
 
     // class variables
     private String user;
-    private int millilitersCurrent;
-    private int millilitersGoal;
     private LocalDate date;
+    private int millilitersGoal;
+    private int millilitersAchieved;
 
     /**
      * constructor
      *
      * @param user
-     * @param millilitersCurrent
-     * @param millilitersGoal
      * @param date
+     * @param millilitersGoal
+     * @param millilitersAchieved
      */
-    public Entry(String user, int millilitersCurrent, int millilitersGoal, LocalDate date) {
+    public Day(String user, LocalDate date, int millilitersGoal, int millilitersAchieved) {
         this.user = user;
-        this.millilitersCurrent = millilitersCurrent;
-        this.millilitersGoal = millilitersGoal;
         this.date = date;
+        this.millilitersGoal = millilitersGoal;
+        this.millilitersAchieved = millilitersAchieved;
     }
 
     /**
-     * get String user
+     * returns String username
      *
      * @return user
      */
@@ -40,7 +40,7 @@ public class Entry implements Serializable {
     }
 
     /**
-     * set user
+     * sets String username
      *
      * @param user
      */
@@ -49,25 +49,7 @@ public class Entry implements Serializable {
     }
 
     /**
-     * get int milliliters current
-     *
-     * @return milliliters current
-     */
-    public int getMillilitersCurrent() {
-        return millilitersCurrent;
-    }
-
-    /**
-     * set milliliters current
-     *
-     * @param millilitersCurrent
-     */
-    public void setMillilitersCurrent(int millilitersCurrent) {
-        this.millilitersCurrent = millilitersCurrent;
-    }
-
-    /**
-     * get LocalDate date
+     * returns LocalDate date
      *
      * @return date
      */
@@ -76,7 +58,7 @@ public class Entry implements Serializable {
     }
 
     /**
-     * set date
+     * sets LocalDate date
      *
      * @param date
      */
@@ -85,7 +67,7 @@ public class Entry implements Serializable {
     }
 
     /**
-     * get int milliliters goal
+     * returns int milliliters goal
      *
      * @return milliliters goal
      */
@@ -94,12 +76,30 @@ public class Entry implements Serializable {
     }
 
     /**
-     * set milliliters goal
+     * sets int milliliters goal
      *
      * @param millilitersGoal
      */
     public void setMillilitersGoal(int millilitersGoal) {
         this.millilitersGoal = millilitersGoal;
+    }
+
+    /**
+     * returns int milliliters achieved
+     *
+     * @return milliliters achieved
+     */
+    public int getMillilitersAchieved() {
+        return millilitersAchieved;
+    }
+
+    /**
+     * sets int milliliters achieved
+     *
+     * @param millilitersAchieved
+     */
+    public void setMillilitersAchieved(int millilitersAchieved) {
+        this.millilitersAchieved = millilitersAchieved;
     }
 
 }

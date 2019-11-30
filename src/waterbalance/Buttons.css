@@ -68,7 +68,7 @@
         radial-gradient(center 50% 50%, radius 100%, #4aaec7, #47aac2);
     -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
     -fx-font-weight: bold;
-    -fx-font-size: 1.1em;
+    -fx-font-size: 1.3em;
     -fx-font-family: Tahoma;
     -fx-background-radius: 50px;
 }
@@ -97,7 +97,7 @@
         radial-gradient(center 50% 50%, radius 100%, #4aaec7, #47aac2);
     -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
     -fx-font-weight: bold;
-    -fx-font-size: 1.1em;
+    -fx-font-size: 1.3em;
     -fx-font-family: Tahoma;
     -fx-background-radius: 50px;
 }
@@ -126,7 +126,7 @@
         radial-gradient(center 50% 50%, radius 100%, #4aaec7, #47aac2);
     -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
     -fx-font-weight: bold;
-    -fx-font-size: 1.1em;
+    -fx-font-size: 1.3em;
     -fx-font-family: Tahoma;
     -fx-background-radius: 50px;
 }
@@ -155,7 +155,7 @@
         radial-gradient(center 50% 50%, radius 100%, #4aaec7, #47aac2);
     -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
     -fx-font-weight: bold;
-    -fx-font-size: 1.1em;
+    -fx-font-size: 1.3em;
     -fx-font-family: Tahoma;
     -fx-background-radius: 50px;
 }
